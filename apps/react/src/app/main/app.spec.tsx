@@ -1,11 +1,13 @@
 import React from 'react';
-import { render } from '@testing-library/react';
+import { render, cleanup } from '@testing-library/react';
 
 import { BrowserRouter } from 'react-router-dom';
 
-import App from './app';
+import { App } from './app';
 
 describe('App', () => {
+  afterEach(cleanup);
+
   it('should render successfully', () => {
     const { baseElement } = render(
       <BrowserRouter>
@@ -23,6 +25,6 @@ describe('App', () => {
       </BrowserRouter>
     );
 
-    expect(getByText('Welcome to react!')).toBeTruthy();
+    expect(getByText('Hello World')).toBeTruthy();
   });
 });
