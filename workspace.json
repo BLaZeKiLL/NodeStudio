@@ -15,13 +15,8 @@
             "main": "apps/react/src/main.tsx",
             "polyfills": "apps/react/src/polyfills.ts",
             "tsConfig": "apps/react/tsconfig.app.json",
-            "assets": [
-              "apps/react/src/favicon.ico",
-              "apps/react/src/assets"
-            ],
-            "styles": [
-              "apps/react/src/styles.scss"
-            ],
+            "assets": ["apps/react/src/favicon.ico", "apps/react/src/assets"],
+            "styles": ["apps/react/src/styles.scss"],
             "scripts": [],
             "webpackConfig": "@nrwl/react/plugins/babel"
           },
@@ -70,10 +65,7 @@
               "apps/react/tsconfig.app.json",
               "apps/react/tsconfig.spec.json"
             ],
-            "exclude": [
-              "**/node_modules/**",
-              "!apps/react/**"
-            ]
+            "exclude": ["**/node_modules/**", "!apps/react/**"]
           }
         },
         "test": {
@@ -108,13 +100,8 @@
           "options": {
             "linter": "eslint",
             "config": "apps/react-e2e/.eslintrc",
-            "tsConfig": [
-              "apps/react-e2e/tsconfig.e2e.json"
-            ],
-            "exclude": [
-              "**/node_modules/**",
-              "!apps/react-e2e/**"
-            ]
+            "tsConfig": ["apps/react-e2e/tsconfig.e2e.json"],
+            "exclude": ["**/node_modules/**", "!apps/react-e2e/**"]
           }
         }
       }
@@ -132,9 +119,7 @@
             "outputPath": "dist/apps/electron",
             "main": "apps/electron/src/main.ts",
             "tsConfig": "apps/electron/tsconfig.app.json",
-            "assets": [
-              "apps/electron/src/assets"
-            ]
+            "assets": ["apps/electron/src/assets"]
           },
           "configurations": {
             "production": {
@@ -165,10 +150,7 @@
               "apps/electron/tsconfig.app.json",
               "apps/electron/tsconfig.spec.json"
             ],
-            "exclude": [
-              "**/node_modules/**",
-              "!apps/electron/**"
-            ]
+            "exclude": ["**/node_modules/**", "!apps/electron/**"]
           }
         },
         "test": {
@@ -176,6 +158,33 @@
           "options": {
             "jestConfig": "apps/electron/jest.config.js",
             "tsConfig": "apps/electron/tsconfig.spec.json"
+          }
+        }
+      }
+    },
+    "visual-js": {
+      "root": "libs/visual-js",
+      "sourceRoot": "libs/visual-js/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:lint",
+          "options": {
+            "linter": "eslint",
+            "config": "libs/visual-js/.eslintrc",
+            "tsConfig": [
+              "libs/visual-js/tsconfig.lib.json",
+              "libs/visual-js/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/visual-js/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/visual-js/jest.config.js",
+            "tsConfig": "libs/visual-js/tsconfig.spec.json"
           }
         }
       }

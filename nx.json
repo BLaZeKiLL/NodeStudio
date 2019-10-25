@@ -16,6 +16,9 @@
     },
     "electron": {
       "tags": []
+    },
+    "visual-js": {
+      "tags": []
     }
   }
 }
