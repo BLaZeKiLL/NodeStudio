@@ -1,1 +1,1 @@
-export * from './lib/vjs-editor';
+export * from './lib/graph-editor/graph-editor';
