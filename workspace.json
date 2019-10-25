@@ -188,6 +188,33 @@
           }
         }
       }
+    },
+    "vjs-editor": {
+      "root": "libs/vjs-editor",
+      "sourceRoot": "libs/vjs-editor/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:lint",
+          "options": {
+            "linter": "eslint",
+            "config": "libs/vjs-editor/.eslintrc",
+            "tsConfig": [
+              "libs/vjs-editor/tsconfig.lib.json",
+              "libs/vjs-editor/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/vjs-editor/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/vjs-editor/jest.config.js",
+            "tsConfig": "libs/vjs-editor/tsconfig.spec.json"
+          }
+        }
+      }
     }
   },
   "cli": {

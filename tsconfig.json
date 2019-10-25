@@ -16,7 +16,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@node-studio/visual-js": ["libs/visual-js/src/index.ts"]
+      "@node-studio/visual-js": ["libs/visual-js/src/index.ts"],
+      "@node-studio/vjs-editor": ["libs/vjs-editor/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
