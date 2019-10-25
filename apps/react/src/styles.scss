@@ -1,1 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+
+// lite graph css import maybe should be moved
+@import '../../../node_modules/litegraph.js/css/litegraph.css';
+@import '../../../node_modules/litegraph.js/css/litegraph-editor.css';
+
+body html {
+  height: 100%;
+}
+
+body {
+  margin: 0px;
+}

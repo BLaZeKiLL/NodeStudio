@@ -7162,9 +7162,9 @@ listr@0.12.0:
     stream-to-observable "^0.1.0"
     strip-ansi "^3.0.1"
 
-litegraph.js@./libs/litegraph.js-0.7.1.tgz:
-  version "0.7.1"
-  resolved "./libs/litegraph.js-0.7.1.tgz#6bcad5192fea05024c9545c415d8122c80315b02"
+litegraph.js@./libs/litegraph/litegraph.js-0.7.3.tgz:
+  version "0.7.3"
+  resolved "./libs/litegraph/litegraph.js-0.7.3.tgz#87f0d8bb53895a3110d86da067caf6a99cfc7b23"
 
 load-json-file@^1.0.0:
   version "1.1.0"
