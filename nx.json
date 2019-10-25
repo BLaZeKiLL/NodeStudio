@@ -1,0 +1,27 @@
+{
+  "npmScope": "node-studio",
+  "implicitDependencies": {
+    "workspace.json": "*",
+    "package.json": "*",
+    "tsconfig.json": "*",
+    "tslint.json": "*",
+    "nx.json": "*"
+  },
+  "projects": {
+    "react": {
+      "tags": []
+    },
+    "react-e2e": {
+      "tags": []
+    },
+    "electron": {
+      "tags": []
+    },
+    "visual-js": {
+      "tags": []
+    },
+    "vjs-editor": {
+      "tags": []
+    }
+  }
+}
